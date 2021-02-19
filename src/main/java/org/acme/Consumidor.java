@@ -9,6 +9,9 @@ public class Consumidor {
 	
 	@Incoming("libros")
 	public void imprimeLibro(Libro libro) {
+		if(libro==null)
+			System.out.println("El libro es nulo");
+		else
 		System.out.println(libro.toString());
 	}
 
