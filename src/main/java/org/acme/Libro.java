@@ -11,6 +11,10 @@ public class Libro implements Serializable{
 	private int id;
 	private static int numeroLibros=0;
 	
+	public Libro() {
+		super();
+	}
+	
 	public Libro(String titulo) {
 		int aleatorio = (int)(Math.random()*100000);
 		double precio= (Math.random()*5 + 95);
